@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>system_mnist_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.HAS_TREADY">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.HAS_TLAST">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.CLK_DOMAIN">system_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDATA_NUM_BYTES</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TDATA_NUM_BYTES">4</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TDEST_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TDEST_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TID_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TID_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>TUSER_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.TUSER_WIDTH">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TREADY</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TREADY">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TSTRB</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TSTRB">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TKEEP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TKEEP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>HAS_TLAST</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.HAS_TLAST">1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.CLK_DOMAIN">system_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.LAYERED_METADATA">undef</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.ASSOCIATED_BUSIF">S00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.ASSOCIATED_RESET">s00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.CLK_DOMAIN">system_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXIS_RST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_BUSIF">M00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_RESET">m00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.CLK_DOMAIN">system_processing_system7_0_0_FCLK_CLK0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>mnist_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 10 15:11:42 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e6b22140</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e6b22140</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>system_mnist_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 10 15:11:42 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e6b22140</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>mnist_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 10 15:11:42 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:10598a05</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>system_mnist_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 10 15:11:42 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:10598a05</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 10 15:32:35 UTC 2023</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:e6b22140</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="4" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/fcnnW_buffer/fcnnW_buffer.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/conv2_ram/conv2_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigmoid_blkmem/sigmoid_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/float_fix/float_fix.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/float_div/float_div.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fix_float/fix_float.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/pooling_ram/pooling_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/conv_ram/conv_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fcnnb_blkmem/fcnnb_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fcnnW_blkmem/fcnnW_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/BN_blkmem/BN_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/b2_blkmem/b2_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/W2_blkmem/W2_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/b1_blkmem/b1_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/W1_blkmem/W1_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/classify_ram/classify_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/layer1_ram/layer1_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/input_ram/input_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo_maxis/fifo_maxis.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo_saxis/fifo_saxis.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/batch_normalization.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/convlayer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max2to1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling_1serial.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling_core.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/mnist_process.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0_M00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0_S00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/out_select.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/out_select_cell.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/pooling_ctrl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/sigmoid.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/single_convcore.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/sigmoid.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/fcnn_b.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/fcnn_W.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/batch_normalization.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/b2.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/W2.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/b1.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/W1.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/five.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/one.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/system_mnist_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/fcnnW_buffer/fcnnW_buffer.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/conv2_ram/conv2_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/sigmoid_blkmem/sigmoid_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/float_fix/float_fix.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/float_div/float_div.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fix_float/fix_float.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/pooling_ram/pooling_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/conv_ram/conv_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fcnnb_blkmem/fcnnb_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fcnnW_blkmem/fcnnW_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/BN_blkmem/BN_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/b2_blkmem/b2_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/W2_blkmem/W2_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/b1_blkmem/b1_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/W1_blkmem/W1_blkmem.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/classify_ram/classify_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/layer1_ram/layer1_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/input_ram/input_ram.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo_maxis/fifo_maxis.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fifo_saxis/fifo_saxis.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/batch_normalization.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/convlayer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max2to1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling_1serial.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/max_pooling_core.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/mnist_process.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0_M00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0_S00_AXIS.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/out_select.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/out_select_cell.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/pooling_ctrl.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/sigmoid.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/src/single_convcore.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/sigmoid.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/fcnn_b.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/fcnn_W.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/batch_normalization.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/b2.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/W2.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/b1.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/W1.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/five.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../src/coe/one.coe</spirit:name>
+        <spirit:userFileType>coe</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/6dfb/hdl/mnist_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/system_mnist_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>system_mnist_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_mnist_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_mnist_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_mnist_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>system_mnist_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP of MNIST</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="4">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">system_mnist_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>mnist_v1.0</xilinx:displayName>
+      <xilinx:xpmLibraries>
+        <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
+        <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
+      </xilinx:xpmLibraries>
+      <xilinx:coreRevision>12</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f0827d9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d81514f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@92768d8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59b1195a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f57d26e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c523cdc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ad3bcc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46463a0b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ca08c0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10e6f37b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53aae0b4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@774244cd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49e92826_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a4f0fe_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@105bb9af_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f61b7f4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c323f85_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@137efbfe_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa81c99_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@282d75c1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@245047ad_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2016b971_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f90011_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71f1efa7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@140dcaf6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b799710_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75a89ed7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1796e267_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fab818e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c229d71_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@571736d1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@101723c0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5826c48c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d755060_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38373b1e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54179f4a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ec2ed6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55519c67_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec17959_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@604fa162_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cff0fb7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36da39f3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b63d3f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15ef2d85_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bd3f32_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f5b3cc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f61a094_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67f4a774_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63a7ad3d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d639c78_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51597a12_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed0495d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b3fdfb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66c73195_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aa1e769_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48421bf2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1db16c0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24b47911_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33f8431c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64299bdf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fa1b92a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a23e749_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee42432_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624c985f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ec6bdf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@606bf08c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18a74092_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c9b5ef1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47289dd3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e8cafdf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d083386_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37efb8fc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ec07ae1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6be360d8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29ca0cd9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8e28d20_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d5d86ba_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a8bf053_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59f37f9d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bb882da_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de626fb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@540ae252_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6858ddf0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eb86d88_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@469dc3b3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17ce1d65_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e01bb43_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db6dcc5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b2aa78_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57590fc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e639f9e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c886fa2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d39b096_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67106cf2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2077932a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f489290_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e62929d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11f6b83f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c085e7b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35c28d84_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@501fb6be_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@457b8fb8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42460be4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df59c98_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c699a79_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21b800b1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@491422b5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c07998d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db027d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ff9e512_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12d081f3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4ec314_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c01f354_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6910ada5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@570ba08a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@279dec76_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb7d73e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aa65949_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15087cca_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60b90c3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5570f27c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1994025e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@747532d8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d27c2f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cf7b90c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22394c61_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43fb1ff8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1f9fed_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c493ea0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c81cc1e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c0c649c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cecebfe_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34d50250_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1afaf6eb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@156e9635_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db220b3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc4740a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fdb1c1b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e78264_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3192ad52_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fc62d6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e2f0212_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb8311a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ad150a8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4837ea89_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@258b2933_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9180382_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7bb2c17f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21015346_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6abd82f5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10ceedb1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1bf863_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5db1fe_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b6badf3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564105d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f95d6e5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37e3812_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f1b70dc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@929f7ef_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e40a217_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@769f67ff_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b2a5b11_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bc1f218_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17f81d5d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@264d2c64_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db4cd60_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61cb362a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43891bda_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61df5189_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49dc4e5e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ee49b19_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39c9970f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f7445d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21d925d2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@540dfb07_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cfdd8ac_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@674eb832_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@260986f9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d019d9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17738c10_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@187e29b7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@788a1d98_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79c58d54_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52f14f46_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29be43d6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@627a8a7a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c1688c9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c6b4336_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cb8a2cd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d4a0f4c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19a7ce4f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66f56aae_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a23c750_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b31920e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc1471a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b66ce4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15db518b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f80435_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7560e902_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45f318f1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4186e562_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21cbc6f3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e23a95_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fa2657_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2110c192_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79866707_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ca919c2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15407734_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@117826df_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d5ddf51_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df71280_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a34afda_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d0afac_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a6bef7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2956cd4d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c7ef26f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589900ea_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e6116d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56804342_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28113cee_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6032a208_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@112503af_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5acc6e0b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192f5a0c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6753cb26_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6614b7fb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a37f03_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63910a5d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f0b0f63_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58e470e7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fa098c1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33507e2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e243fb4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31e76bd3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27939c52_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50347dea_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e91b17f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d804c7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b5ecb0c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dbaf891_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24a41954_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48916f31_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@471f3d5a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57a94d66_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c230bc5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b0a941_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@706839c5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f6eb92c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e7d7202_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@179209d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44103deb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd68fe7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e498472_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41ccf0d8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@475e05f9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2185737d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6059cee2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae48314_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d62f46a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e207f81_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37cb755_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d7e4e63_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@492b2791_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ccdd69f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39baab8b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1416b3c5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6babf249_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bfe0ac5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f3e5cce_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bb57771_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@288ed292_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cfcd05a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73951dbf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58c82b0b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a809ec6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50b0f1cc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a245832_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ffb1680_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2133dab9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e59b4c9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@444c85da_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ce6eaaa_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f0aa4ac_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42306c4c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@197a7574_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e494f0e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7afb9459_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fca6574_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6791588a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e19e3fd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69bae22f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@395c9bd0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363e0f0c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69bbaeb6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27516a93_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c176aa5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6706e3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14699171_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12b9f3fd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cb5cecd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bb7e68e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@470785b5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f899e29_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e14233_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c191a1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b4e053_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c333642_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a7b5db9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eac72e4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@183ce3d9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f966b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a660564_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c04527_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32b2f604_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fd2608b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223c8bbb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62e92202_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ae745f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c20ceaf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dde75c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b99a0e2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9092544_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67bc7e1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41395e86_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f127483_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14782c62_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd73120_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55165e9b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d2967c2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f49c3f6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37507af5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b8ff90a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cfc4ec_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7827ad7b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d77bd8f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c27ae8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3044f7d3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f93ab10_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dfc0cec_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@649b7aad_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@641a32f6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@513d33b5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a565502_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d5482fb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dbaf918_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76edb5f2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42bfface_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c93487_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aac5e61_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa83ca_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e23b70d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f50e34d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fbaac60_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bae3918_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e008a2e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@535afe62_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b41b70_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b241981_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@328042ad_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@357b1869_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463a71f9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2acc429b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4628f607_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ea9690_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71e91216_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e50750c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36faad04_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa56982_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3605652c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d79be51_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7095bb43_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52d45cf2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b207a49_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@754eddf7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57f760a5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ededb3d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12848e19_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@578bdd29_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71e3d30e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c947870_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cb9cdd8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2800ae33_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@795698d5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15a3d426_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49adf72f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4305fc64_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cf96004_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e3ce683_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12afe14e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79865acf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@678edd1e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1298b489_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a981b40_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e4db823_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ac0ab11_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66d30fae_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@544b4ea6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79bb873f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e3a3e7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4197fa6d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38d60337_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cff02a5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3170a563_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5faffff5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@657299c2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c5e3c2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@451d17cf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16620997_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a40a402_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e9b7398_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2ec8e0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225b6642_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c7ef314_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a2230b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@646272a6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@577afb9d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7b7b60_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56e0f21d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ad5aaf8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a6cf8e3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e2b73a1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5389afa6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64180f3d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b2dddd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6abbabf5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5be6abfe_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55faf048_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c613629_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4158878a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19e55b87_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@de9e33_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77889f7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dc28ba0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d7f39e1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a3ba02_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@310c2a04_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a00aa90_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c1042ef_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a260db1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8a2689e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18b87993_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64723e36_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@210eb9c4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20c7a5b9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@488920a3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f8e84bb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a79b4a1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51713ae8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@281b891d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7511abe7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2702d941_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c8a9f93_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79b06b0d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a1c6154_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b76572f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29763259_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@637ca90f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@588ce45c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40d58dc6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@794302e4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7229f561_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cab3bb8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e8035b5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@640eb78e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec32bba_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2784c65c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12308a7c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a90813c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42904b9f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eea2f0f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a77daae_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb3cd67_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36c41d00_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66b3c3a0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63d07b35_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77a1e334_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716b2074_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@605c4a53_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@302d8646_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14adf764_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1df44e61_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50599cb7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f81d421_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f497bf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@679f1f6d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45fe697d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c504c7f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@453b289c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59d3f216_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4695c667_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35312b71_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a9f9f9b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4da88b13_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bf9afd1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@656c035e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f3a3998_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@471ddd71_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b16995a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60e7d347_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14eb15d9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53c1b4e6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4590372a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f0edca8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30600b46_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a66bc0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d356b30_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77987ece_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c0124bd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d9f087f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@444977a5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@124ca895_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@944a8aa_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba460c4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@306c0faf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@716db83c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56469e6d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c136e5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4968d865_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68b2cbfa_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@776062e9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2006bf19_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@447f56fc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@203dfdd7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31d51be7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a679523_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a730c64_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30de645c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55885f79_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3782770e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da25a71_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c7c592f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@693c641c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12203a18_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fd358c7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d0ca56a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe0c0e4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59476771_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@757c9b02_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@200dc971_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68a22e3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74bedd6f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f026220_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@739132e3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78efc5de_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60675044_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@192c8353_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@453fa1dc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ed20579_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23e9ae59_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62db3aa4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13789ff1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17c06176_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18675249_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@208083f5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a86ea29_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62e7032a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b9c99ed_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@778ddcb8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbd3c60_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@505eeead_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44fefbd0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23a61ae0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4443ba52_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@430e16f6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62c86717_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@727f9522_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c719168_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f26ef5d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d377508_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa4aa27_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@287c1ac6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa7133_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3133d2c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e594f9c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a2bcfed_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e5bf6ac_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@590ec308_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18aaf175_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1457bad7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31703408_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fcc784b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fffbb4e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dc74413_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28c0d420_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58bca9e7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7489f2bc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@505fb5b2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0b10d2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b3190ee_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77ac572b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ab0c49c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3601d2c9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46aa59c9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@499ce940_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@563cc7b6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24331ff2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@722db1ce_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45d79cae_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2578e2a7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c85cc85_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bce5d2b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79864ceb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f059f50_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76b6d2cf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d28e2bd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@589b05d1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49acc9d1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@668b5fa8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53be4b63_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2986e96e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dd52bff_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aa58b9f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dc859ea_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f2ec805_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15227c94_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5847b87_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69c34408_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28ae0878_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a6098e3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37c3be60_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a04a017_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f482a12_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564a2e00_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53448ee8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fba3a77_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26468d6a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4682007b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@540be15d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2edd6105_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ff54889_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49c2c9f1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a88e86_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@165c5cdb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70f39821_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10105d96_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7efa5660_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53faf0ba_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3438ff3e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15d46138_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5c7a0b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4733e6c6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ccbda33_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a82030e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ac59f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65245a6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f172cb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cdfc7f2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6bb2f6c3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@418c76e7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33ace346_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45459b5a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5912546a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6db30023_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ffe54d2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54036287_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ffd0fef_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2452630f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@202cdfd0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f9e29f7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fb81505_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73a15923_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d2ee2b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f50613d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56879048_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c1db177_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28bc57e9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1463c50_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6daa2c8c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@148e8a16_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37788fb3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22efa13a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d330003_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7940c6a4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53bd7599_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ba07011_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@387690f9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bc273f4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1996c869_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205bcfdd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55529469_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56e6edfb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@388271ea_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d3835d4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eb2d3b9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aa0fbde_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@149a0585_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e369d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4db1a222_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442a9000_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15cdee7f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@714ad232_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fdf34c0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3672de94_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ece6a3c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa01ee5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79ae123d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41877ad2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@347baaaa_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e7e9de4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4da5ba9d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a9e1d29_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cb211bb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76a48328_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54032752_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ad5feb7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6950d8b6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@661aa292_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a1cd890_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1833f80c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18e0aaf4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f14aefb_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e08d06_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8d80b6c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e83a3f1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e420c70_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58274a3d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5db6f659_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fb00e09_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fbad198_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24f29c8f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@183e1f1b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64605f3f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5403a903_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72a509d2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e28a4e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42338303_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@648f8c4f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13f1dec3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17889a9_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d2aacf0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bed2807_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc95e02_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463e7ebf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d650615_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2613153f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d78fad4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3eecbd5f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11287c25_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@372be96e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d8d55d0_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f4598c3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ec7777f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b03b5af_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e31d21b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e23164e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7af4dde2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ceb0a79_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8897f82_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a694efd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57b2932f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489bb3ff_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eb140de_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e8bcacc_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@619a357b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ac972e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ab93ff_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39c3e976_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6029f412_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11b6e9c4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2999cf_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34594813_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e3d6bb2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620c3e20_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@576f5de4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2817d171_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@590d1cbd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a894b4c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b8d3e13_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15448378_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f25ec3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c928b6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@712beeef_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79387e1d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3de452f8_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c1c1a70_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f928730_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c2711e2_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b95a5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22602196_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1796d095_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a71826a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f428a8c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@101a95dd_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be9e565_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5144fa31_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4067da74_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47e85083_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@692c10d1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f0544f3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@742da5d7_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55ef848b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@373fc6ec_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cbf1a96_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77ce2e1c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b7859f3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78fb2a9b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@417461e6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73ebb05d_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@95ddf53_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4814dbd3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48c2c7a1_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28debe12_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bee9880_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28b0f20c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@115f0bef_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ba37018_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a706e73_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31727a29_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4be10e1e_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66ac10e6_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63410b40_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cf11ce_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1af9c368_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519ec0ab_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39d9e95_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@281cf82_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a1bcfe5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f126b8f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@324afaf3_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b1ddb5c_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7951dd4f_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cc938f5_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cdc0401_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@283ba9a4_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@724afc0a_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ae2469_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a979aad_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e5c361b_ARCHIVE_LOCATION">d:/self_learning/PYNQ_Z2/prjs/mnist_test/repo/ip/mnist_1.0</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M00_AXIS_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.TDATA_NUM_BYTES" xilinx:valueSource="auto_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXIS_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a0d269a0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d354047e"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="5cdaf617"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="12ea46e6"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="0da51192"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

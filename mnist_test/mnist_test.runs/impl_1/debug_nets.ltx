@@ -1,0 +1,167 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/load_state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/load_state[3]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/load_state[2]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/load_state[1]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/load_state[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/mnist_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[7]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[6]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[5]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[4]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[3]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[2]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[1]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/mnist_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/number_o",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[3]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[2]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[1]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/mnist_data_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/number_val",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

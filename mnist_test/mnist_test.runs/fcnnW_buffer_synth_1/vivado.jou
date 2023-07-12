@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul  6 21:50:58 2023
+# Process ID: 28460
+# Current directory: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/fcnnW_buffer_synth_1
+# Command line: vivado.exe -log fcnnW_buffer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fcnnW_buffer.tcl
+# Log file: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/fcnnW_buffer_synth_1/fcnnW_buffer.vds
+# Journal file: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/fcnnW_buffer_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fcnnW_buffer.tcl -notrace

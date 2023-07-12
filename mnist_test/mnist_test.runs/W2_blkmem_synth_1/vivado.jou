@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jul  6 21:26:52 2023
+# Process ID: 29800
+# Current directory: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/W2_blkmem_synth_1
+# Command line: vivado.exe -log W2_blkmem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source W2_blkmem.tcl
+# Log file: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/W2_blkmem_synth_1/W2_blkmem.vds
+# Journal file: D:/self_learning/PYNQ_Z2/prjs/mnist_test/mnist_test.runs/W2_blkmem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source W2_blkmem.tcl -notrace

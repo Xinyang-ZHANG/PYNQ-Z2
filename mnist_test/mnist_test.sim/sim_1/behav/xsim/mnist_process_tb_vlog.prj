@@ -1,0 +1,40 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mnist_test.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../mnist_test.srcs/sources_1/bd/system/ipshared/8c62/hdl" --include "../../../../mnist_test.srcs/sources_1/bd/system/ipshared/8713/hdl" --include "../../../../mnist_test.srcs/sources_1/bd/system/ipshared/1ddd/hdl/verilog" --include "../../../../mnist_test.srcs/sources_1/bd/system/ipshared/b2d0/hdl/verilog" --include "D:/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \
+"../../../../mnist_test.srcs/sources_1/ip/fcnnW_buffer/sim/fcnnW_buffer.v" \
+"../../../../mnist_test.srcs/sources_1/ip/conv2_ram/sim/conv2_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/sigmoid_blkmem/sim/sigmoid_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/float_fix/float_fix_sim_netlist.v" \
+"../../../../mnist_test.srcs/sources_1/ip/float_div/float_div_sim_netlist.v" \
+"../../../../mnist_test.srcs/sources_1/ip/fix_float/fix_float_sim_netlist.v" \
+"../../../../mnist_test.srcs/sources_1/ip/pooling_ram/sim/pooling_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/conv_ram/sim/conv_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/fcnnb_blkmem/sim/fcnnb_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/fcnnW_blkmem/sim/fcnnW_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/BN_blkmem/sim/BN_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/b2_blkmem/sim/b2_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/W2_blkmem/sim/W2_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/b1_blkmem/sim/b1_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/W1_blkmem/sim/W1_blkmem.v" \
+"../../../../mnist_test.srcs/sources_1/ip/classify_ram/sim/classify_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/layer1_ram/sim/layer1_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/input_ram/sim/input_ram.v" \
+"../../../../mnist_test.srcs/sources_1/ip/test_imgrom/sim/test_imgrom.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/batch_normalization.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/convlayer.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/max2to1.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/max_pooling.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/max_pooling_1serial.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/max_pooling_core.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/mnist_process.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/out_select.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/out_select_cell.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/pooling_ctrl.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/sigmoid.v" \
+"../../../../mnist_test.srcs/sources_1/imports/src/single_convcore.v" \
+"../../../../mnist_test.srcs/sim_1/imports/sim/mnist_process_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

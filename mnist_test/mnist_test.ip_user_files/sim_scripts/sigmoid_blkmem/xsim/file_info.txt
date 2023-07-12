@@ -1,0 +1,2 @@
+sigmoid_blkmem.v,verilog,xil_defaultlib,../../../../mnist_test.srcs/sources_1/ip/sigmoid_blkmem/sim/sigmoid_blkmem.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

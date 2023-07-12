@@ -1,0 +1,3 @@
+RUN：
+set_property library xil_defaultlib [get_files]
+if you want to rerun simulation when editing IP in a temporary project
