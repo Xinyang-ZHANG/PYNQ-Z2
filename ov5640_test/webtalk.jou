@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 30 00:41:37 2023
+# Process ID: 28936
+# Current directory: d:/self_learning/PYNQ_Z2/prjs/ov5640_test
+# Command line: wbtcv.exe -mode batch -source d:/self_learning/pynq_z2/prjs/ov5640_mnist/ov5640_mnist.tmp/red_block_mnist_v1_0_project/red_block_mnist_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: d:/self_learning/PYNQ_Z2/prjs/ov5640_test/webtalk.log
+# Journal file: d:/self_learning/PYNQ_Z2/prjs/ov5640_test\webtalk.jou
+#-----------------------------------------------------------
+source d:/self_learning/pynq_z2/prjs/ov5640_mnist/ov5640_mnist.tmp/red_block_mnist_v1_0_project/red_block_mnist_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

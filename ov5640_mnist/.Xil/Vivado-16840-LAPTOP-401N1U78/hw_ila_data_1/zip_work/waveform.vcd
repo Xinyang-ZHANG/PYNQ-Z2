@@ -1,0 +1,94 @@
+$date
+        2024-Jan-01 11:13:33
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 4 " system_i/mnist_0/inst/mnist_process/load_state [3:0] $end
+$var reg 4 & system_i/mnist_0/inst/mnist_process/number_o [3:0] $end
+$var reg 8 * system_i/mnist_0/inst/mnist_process/mnist_data [7:0] $end
+$var reg 1 2 system_i/mnist_0/inst/mnist_process/mnist_data_valid $end
+$var reg 1 3 system_i/mnist_0/inst/mnist_process/number_val $end
+$var reg 1 4 _TRIGGER $end
+$var reg 1 5 _WINDOW $end
+$var reg 1 6 _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000 "
+b101 &
+b110 *
+02
+03
+04
+15
+06
+$end
+#23
+b111 "
+#49
+b1000 "
+#202
+b1001 "
+#284
+b111 "
+#310
+b1000 "
+#463
+b111 "
+#489
+b1000 "
+#642
+b111 "
+#668
+b1000 "
+#821
+b111 "
+#847
+b1000 "
+#1000
+b111 "
+#1026
+b1000 "
+#1179
+b1001 "
+#1261
+b1010 "
+#1421
+b1011 "
+#1422
+b1010 "
+#1582
+b1011 "
+#1583
+b1010 "
+#1638
+b0 &
+#1645
+b111 &
+#1654
+b10 &
+#1660
+b111 &
+#1668
+b10 &
+#1743
+b1011 "
+#1744
+b1100 "
+#2000
+b0 "
+13
+14
+#2001
+b1 "
+03
+#2009
+b0 &
+#2010
+b101 &

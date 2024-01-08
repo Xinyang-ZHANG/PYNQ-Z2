@@ -1,0 +1,82 @@
+$date
+        2023-Dec-18 23:28:14
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " system_i/system_ila_0/inst/SLOT_0_VID_IO_active_video_1 $end
+$var reg 24 # system_i/system_ila_0/inst/SLOT_0_VID_IO_data_1 [23:0] $end
+$var reg 1 ; system_i/system_ila_0/inst/SLOT_0_VID_IO_field_1 $end
+$var reg 1 < system_i/system_ila_0/inst/SLOT_0_VID_IO_hblank_1 $end
+$var reg 1 = system_i/system_ila_0/inst/SLOT_0_VID_IO_hsync_1 $end
+$var reg 1 > system_i/system_ila_0/inst/SLOT_0_VID_IO_vblank_1 $end
+$var reg 1 ? system_i/system_ila_0/inst/SLOT_0_VID_IO_vsync_1 $end
+$var reg 1 @ _TRIGGER $end
+$var reg 1 A _WINDOW $end
+$var reg 1 B _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b0 #
+0;
+0<
+0=
+1>
+0?
+0@
+1A
+0B
+$end
+#796
+1<
+#906
+1=
+#946
+0=
+#1166
+0<
+#2446
+1<
+#2556
+1=
+#2596
+0=
+#2816
+0<
+#4096
+1<
+0>
+1@
+#4206
+1=
+#4246
+0=
+#4466
+1"
+0<
+#5746
+0"
+1<
+#5856
+1=
+#5896
+0=
+#6116
+1"
+0<
+#7396
+0"
+1<
+#7506
+1=
+#7546
+0=
+#7766
+1"
+0<

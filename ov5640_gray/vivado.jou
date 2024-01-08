@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jan  7 14:24:02 2024
+# Process ID: 47524
+# Current directory: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12372 D:\self_learning\PYNQ_Z2\prjs\ov5640_gray\ov5640_gray.xpr
+# Log file: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/vivado.log
+# Journal file: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/ov5640_gray.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/ov5640_gray.srcs/sources_1/bd/system/system.bd}

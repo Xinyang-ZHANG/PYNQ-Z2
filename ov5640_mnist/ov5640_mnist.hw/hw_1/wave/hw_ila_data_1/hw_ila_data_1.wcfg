@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/self_learning/PYNQ_Z2/prjs/ov5640_mnist/ov5640_mnist.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="8192001fs"></ZoomEndTime>
+      <Cursor1Time time="2000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="482"></NameColumnWidth>
+      <ValueColumnWidth column_width="278"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="system_i/mnist_0/inst/mnist_process/number_val" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/mnist_0/inst/mnist_process/number_val</obj_property>
+      <obj_property name="ObjectShortName">number_val</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/mnist_0/inst/mnist_process/number_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/mnist_0/inst/mnist_process/number_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">number_o[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/index" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/index[5:0]</obj_property>
+      <obj_property name="ObjectShortName">index[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mnist_data_norm[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_valid_norm" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_valid_norm</obj_property>
+      <obj_property name="ObjectShortName">mnist_data_valid_norm</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[23:0]</obj_property>
+      <obj_property name="ObjectShortName">cmos_d_o[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/cmos_vsync_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/cmos_vsync_o</obj_property>
+      <obj_property name="ObjectShortName">cmos_vsync_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/cmos_href_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/cmos_href_o</obj_property>
+      <obj_property name="ObjectShortName">cmos_href_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/mnist_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/mnist_en</obj_property>
+      <obj_property name="ObjectShortName">mnist_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/h_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">h_cnt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/v_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">v_cnt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/f_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[5:0]</obj_property>
+      <obj_property name="ObjectShortName">f_cnt[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/red_block_inst/mnist_start" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/red_block_inst/mnist_start</obj_property>
+      <obj_property name="ObjectShortName">mnist_start</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">h_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[9:0]</obj_property>
+      <obj_property name="ObjectShortName">v_cnt[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[10:0]</obj_property>
+      <obj_property name="ObjectShortName">mnist_addr_i[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

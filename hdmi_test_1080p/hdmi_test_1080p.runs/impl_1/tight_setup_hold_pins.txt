@@ -1,0 +1,42 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                 system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D5|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                 system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                                system_i/rgb2dvi_0/U0/ClockSerializer/SerializerMaster/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D1|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                                 system_i/rgb2dvi_0/U0/ClockSerializer/SerializerSlave/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D5|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D2|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D2|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerSlave/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D1|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                 system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/RST|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerSlave/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D7|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D6|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D7|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D6|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[2].DataSerializer/SerializerMaster/D8|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[1].DataSerializer/SerializerMaster/D8|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D6|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                   system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerSlave/D4|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D2|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D5|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D1|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D3|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D8|
+| clk_out1_system_clk_wiz_0_0 |               PixelClkIO |                                  system_i/rgb2dvi_0/U0/DataEncoders[0].DataSerializer/SerializerMaster/D7|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

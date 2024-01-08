@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_xbar_0_synth_1" LaunchDir="D:/self_learning/PYNQ_Z2/prjs/ov5640_mnist/ov5640_mnist.runs/system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_red_block_mnist_0_0_synth_1" LaunchDir="D:/self_learning/PYNQ_Z2/prjs/ov5640_mnist/ov5640_mnist.runs/system_red_block_mnist_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_s00_mmu_0_synth_1" LaunchDir="D:/self_learning/PYNQ_Z2/prjs/ov5640_mnist/ov5640_mnist.runs/system_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

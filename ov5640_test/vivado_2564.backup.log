@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 19 08:48:59 2023
+# Process ID: 2564
+# Current directory: D:/self_learning/PYNQ_Z2/prjs/ov5640_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3644 D:\self_learning\PYNQ_Z2\prjs\ov5640_test\ov5640_test.xpr
+# Log file: D:/self_learning/PYNQ_Z2/prjs/ov5640_test/vivado.log
+# Journal file: D:/self_learning/PYNQ_Z2/prjs/ov5640_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/self_learning/PYNQ_Z2/prjs/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1038.531 ; gain = 379.906
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2875.703 ; gain = 1108.789
+set_property PROGRAM.FILE {D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+Processing Interface axi_vdma_0_M_AXIS_MM2S_ila1_slot1
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_1/inst/ila_lib"}]]
+Processing Interface v_demosaic_0_m_axis_video_ila2_slot0
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_1/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_2' trigger was armed at 2023-Dec-19 08:51:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_1/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_1/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_2' triggered at 2023-Dec-19 08:51:59
+Processed interface v_demosaic_0_m_axis_video_ila2_slot0
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Dec-19 08:52:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Dec-19 08:52:17
+Processed interface axi_vdma_0_M_AXIS_MM2S_ila1_slot1
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/self_learning/PYNQ_Z2/prjs/ov5640_test/ov5640_test.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.

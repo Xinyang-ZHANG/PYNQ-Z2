@@ -1,0 +1,642 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 3,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/number_o",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[3]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[2]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[1]"
+                                            },
+                                            {
+                                                "name": "system_i/mnist_0/inst/mnist_process/number_o[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 10,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[10]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_addr_i[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/v_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_norm[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 23,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[23]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[22]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[21]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[20]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[19]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[18]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[17]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[16]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[15]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[14]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[13]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[12]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[11]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[10]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_d_o[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[15]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[14]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[13]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[12]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[11]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[10]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/h_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/f_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[15]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[14]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[13]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[12]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[11]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[10]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/red_block_inst/v_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 9,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[9]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[8]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[7]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[6]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/h_cnt[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[5]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[4]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[3]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[2]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[1]"
+                                            },
+                                            {
+                                                "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/index[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_href_o",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/cmos_vsync_o",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/mnist_256to1pix/mnist_data_valid_norm",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/mnist_en",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "system_i/red_block_mnist_0/inst/red_block_inst/mnist_start",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "system_i/mnist_0/inst/mnist_process/number_val",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

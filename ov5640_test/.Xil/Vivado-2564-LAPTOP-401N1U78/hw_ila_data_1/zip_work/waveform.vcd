@@ -1,0 +1,95 @@
+$date
+        2023-Dec-19 08:52:19
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " system_i/system_ila_0/inst/SLOT_0_VID_IO_active_video_1 $end
+$var reg 24 # system_i/system_ila_0/inst/SLOT_0_VID_IO_data_1 [23:0] $end
+$var reg 1 ; system_i/system_ila_0/inst/SLOT_0_VID_IO_field_1 $end
+$var reg 1 < system_i/system_ila_0/inst/SLOT_0_VID_IO_hblank_1 $end
+$var reg 1 = system_i/system_ila_0/inst/SLOT_0_VID_IO_hsync_1 $end
+$var reg 1 > system_i/system_ila_0/inst/SLOT_0_VID_IO_vblank_1 $end
+$var reg 1 ? system_i/system_ila_0/inst/SLOT_0_VID_IO_vsync_1 $end
+$var reg 24 @ system_i/system_ila_0/inst/net_slot_1_axis_tdata [23:0] $end
+$var reg 3 X system_i/system_ila_0/inst/net_slot_1_axis_tkeep [2:0] $end
+$var reg 1 [ system_i/system_ila_0/inst/net_slot_1_axis_tuser $end
+$var reg 1 \ system_i/system_ila_0/inst/net_slot_1_axis_tvalid $end
+$var reg 1 ] system_i/system_ila_0/inst/net_slot_1_axis_tready $end
+$var reg 1 ^ system_i/system_ila_0/inst/net_slot_1_axis_tlast $end
+$var reg 3 _ Interface__i1_s1___axi_vdma_0_M_AXIS_MM2S_ [2:0] $end
+$var reg 3 b T_Channel__i1_s1___axi_vdma_0_M_AXIS_MM2S_ [2:0] $end
+$var reg 1 e _TRIGGER $end
+$var reg 1 f _WINDOW $end
+$var reg 1 g _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+b0 #
+0;
+0<
+0=
+1>
+0?
+b0 @
+b111 X
+0[
+1\
+0]
+0^
+b0 _
+b0 b
+0e
+1f
+0g
+$end
+#398
+1<
+#508
+1=
+#548
+0=
+#768
+0<
+#2048
+1<
+0>
+1e
+#2158
+1=
+#2198
+0=
+#2418
+1"
+0<
+1]
+b1 _
+b1 b
+#2671
+1^
+b10 b
+#2672
+0^
+b1 b
+#3698
+0"
+1<
+0]
+b0 _
+b0 b
+#3808
+1=
+#3848
+0=
+#4068
+1"
+0<
+1]
+b1 _
+b1 b

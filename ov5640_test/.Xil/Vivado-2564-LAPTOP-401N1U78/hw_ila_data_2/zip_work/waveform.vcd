@@ -1,0 +1,45 @@
+$date
+        2023-Dec-19 08:52:01
+$end
+$version
+        Vivado v2019.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 24 " system_i/system_ila_1/inst/net_slot_0_axis_tdata [23:0] $end
+$var reg 1 : system_i/system_ila_1/inst/net_slot_0_axis_tdest $end
+$var reg 1 ; system_i/system_ila_1/inst/net_slot_0_axis_tid $end
+$var reg 3 < system_i/system_ila_1/inst/net_slot_0_axis_tkeep [2:0] $end
+$var reg 3 ? system_i/system_ila_1/inst/net_slot_0_axis_tstrb [2:0] $end
+$var reg 1 B system_i/system_ila_1/inst/net_slot_0_axis_tuser $end
+$var reg 1 C system_i/system_ila_1/inst/net_slot_0_axis_tvalid $end
+$var reg 1 D system_i/system_ila_1/inst/net_slot_0_axis_tready $end
+$var reg 1 E system_i/system_ila_1/inst/net_slot_0_axis_tlast $end
+$var reg 3 F Interface__i2_s0___v_demosaic_0_m_axis_video_ [2:0] $end
+$var reg 3 I T_Channel__i2_s0___v_demosaic_0_m_axis_video_ [2:0] $end
+$var reg 1 L _TRIGGER $end
+$var reg 1 M _WINDOW $end
+$var reg 1 N _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+0:
+0;
+b111 <
+b0 ?
+0B
+0C
+1D
+0E
+b11 F
+b11 I
+0L
+1M
+0N
+$end
+#2048
+1L

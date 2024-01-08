@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 27 09:01:06 2023
+# Process ID: 33796
+# Current directory: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/ov5640_gray.runs/system_xbar_0_synth_1
+# Command line: vivado.exe -log system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
+# Log file: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/ov5640_gray.runs/system_xbar_0_synth_1/system_xbar_0.vds
+# Journal file: D:/self_learning/PYNQ_Z2/prjs/ov5640_gray/ov5640_gray.runs/system_xbar_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_xbar_0.tcl -notrace
