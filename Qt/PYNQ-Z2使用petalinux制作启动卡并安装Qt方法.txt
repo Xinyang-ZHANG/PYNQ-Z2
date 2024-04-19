@@ -1,0 +1,36 @@
+一. 修改Vivado工程：
+	1. 需要在ZYNQ_PS打开SD0，打开UART0，否则petalinux无法串口打印信息
+	2. 若用到AXI_INTC模块，需要把irq输出做成single而不是bus格式，否则串口打印信息将出现Kernel panic，
+	    详见：https://support.xilinx.com/s/question/0D52E00006hpRzqSAE/petalinux-20202-kernel-panic-with-intc?language=en_US
+                3. AXI_DMA和AXI_VDMA需要将中断连接到ZYNQ_PS，使用AXI_INTC模块，否则打印页不会出现xilinx-vdma Probed！
+	4. AXI_DMA写到26bits宽，编译生成.xsa
+
+二. Petalinux工程
+	1. Yocto指定sstate和downloads路径，指定串口UART0，SD0启动，否则启动串口不打印信息
+	2. kernel选择CMA大小=25（AXI_DMA要用），选中Device Drivers -> DMA Engine Supports ->DMA Test Client用于后续测试，同时确保DMA和VDMA的驱动已勾选
+	3. rootfs选择packagegroup-petalinux-qt以及qt-extended，参考：https://www.cfanz.cn/resource/detail/OzOLRVwKjQQoN，注意要勾选dopopulatesdk
+	4. 编译petalinux工程，编译文件系统可能过大，需要进行如下操作：
+	   在project-spec/meta-user/conf/petalinuxbsp.conf文件夹中，添加下列两行
+		IMAGE_FSTYPES_remove = "cpio cpio.gz cpio.bz2 cpio.xz cpio.lzma cpio.lz4 cpio.gz.u-boot"
+		IMAGE_FSTYPES_DEBUGFS_remove = "cpio cpio.gz cpio.bz2 cpio.xz cpio.lzma cpio.lz4 cpio.gz.u-boot"
+三. Qt交叉编译环境
+	1. 添加recipes-qt文件夹，参考：https://blog.csdn.net/XXYBMOOO/article/details/131325045，否则qt的衍生库的某些选项“3d，quickcontrols，serialport”在编译时do_fetch会出现问题
+	2. petalinux-build --sdk编译，并确认sdk的安装路径。注意rootfs之前一定要勾选dopopulatesdk，否则无法产生qmake
+	3. 下载qt-opensource-linux-x64-5.x.1.run（最新为5.14），（注意5.15及以上需要下载qt-unified-linux-x64-4.7.0-online.run进行在线安装，其由于基本库的原因，难以在Ubuntu18.04安装）
+	    petalinux2021.2对应Qt5.15，但此处可以用低级的Qt使用交叉编译器qmake，因此可以使用
+	4. 打开Qt，打开Tools/Options，Qt version处增加qmake（zynq_sdk/sysroots/x86_64-petalinux-linux/usr/bin/qmake）
+	5. 同样的地方，配置Compilers和Debuggers，选择arm-xilinx-linux-gnueabi/arm-xilinx-linux-gnueabi-gcc/g++/gdb，选择Kits，配置选中之前的配置
+	6. 使用刚才配置的ZYNQ Qt编译器，build工程，工程使用qDebug()打印helloworld。
+
+四. 上板测试
+	1. Qt部分：输入export QT_QPA_PLATFORM='offscreen'关闭窗口显示，然后./hello执行程序
+	2. AXI_DMA测试部分：测试方法参考：https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18842337/Linux+Soft+DMA+Driver
+				        https://www.kernel.org/doc/html/latest/driver-api/dmaengine/dmatest.html，需要之前在kernel中添加了DMA Test Client
+	    终端输入：	modprobe dmatest
+			echo 2000 > /sys/module/dmatest/parameters/timeout
+			echo 1 > /sys/module/dmatest/parameters/iterations
+			echo dma0chan0 > /sys/module/dmatest/parameters/channel
+			echo 1 > /sys/module/dmatest/parameters/run
+	3. 终端输入：dmesg | tail -n 1
+	    测试打印结果：dmatest: dma0chan0-copy0: summary 1 test, 0 failures 1000 iops 100000 KB/s (0)
+	
