@@ -13,6 +13,7 @@
 	   在project-spec/meta-user/conf/petalinuxbsp.conf文件夹中，添加下列两行
 		IMAGE_FSTYPES_remove = "cpio cpio.gz cpio.bz2 cpio.xz cpio.lzma cpio.lz4 cpio.gz.u-boot"
 		IMAGE_FSTYPES_DEBUGFS_remove = "cpio cpio.gz cpio.bz2 cpio.xz cpio.lzma cpio.lz4 cpio.gz.u-boot"
+	   参考：https://blog.csdn.net/wmdscjhdpy/article/details/102783421
 三. Qt交叉编译环境
 	1. 添加recipes-qt文件夹，参考：https://blog.csdn.net/XXYBMOOO/article/details/131325045，否则qt的衍生库的某些选项“3d，quickcontrols，serialport”在编译时do_fetch会出现问题
 	2. petalinux-build --sdk编译，并确认sdk的安装路径。注意rootfs之前一定要勾选dopopulatesdk，否则无法产生qmake
@@ -33,4 +34,5 @@
 			echo 1 > /sys/module/dmatest/parameters/run
 	3. 终端输入：dmesg | tail -n 1
 	    测试打印结果：dmatest: dma0chan0-copy0: summary 1 test, 0 failures 1000 iops 100000 KB/s (0)
+	4. dma驱动参考：https://github.com/Xilinx/linux-xlnx/blob/xlnx_rebase_v5.10_2021.2/drivers/dma/xilinx/
 	
