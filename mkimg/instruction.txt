@@ -1,0 +1,15 @@
+Ubuntu 20.04
+Vivado 2022.1
+Petalinux 2022.1
+./.bashrc + Vitis/petalinux
+
+git clone --recursive https://github.com/Xilinx/PYNQ.git
+cd PYNQ/
+git checkout origin/image_v3.0.1
+
+cd sdbuild/scripts/
+source ./setup_host.sh
+
+board files (Vivado base -> hwh, bit, xsa) + .py
+cd ..
+make BOARDDIR=~/Documents/mkimg/PYNQ/boards BOARDS=customPynq-Z2
